@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color the Christmas Tree</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Weihnachtsbaum ausmalen</h1>
+
+<div id="controls">
+  <div class="slider-container">
+    <label for="red">Red:</label>
+    <input type="range" id="red" min="0" max="255" value="0">
+  </div>
+  <div class="slider-container">
+    <label for="green">Green:</label>
+    <input type="range" id="green" min="0" max="255" value="0">
+  </div>
+  <div class="slider-container">
+    <label for="blue">Blue:</label>
+    <input type="range" id="blue" min="0" max="255" value="0">
+  </div>
+  <div id="colorPreview"></div>
+</div>
+
+<!-- Move the RGB value display here -->
+<div id="test">Wähle Farbe</div>
+
+<!-- Toggle RGB Inspection -->
+<label>
+  <input type="checkbox" id="toggleRGB"> RGB Werte anzeigen
+</label>
+
+  <!-- Christmas Tree Grid -->
+  <div id="treeContainer">
+    <div id="tree"></div>
+  </div>
+
+  <!-- Save Button -->
+  <button id="saveButton">Save Image</button>
+
+  <!-- Tooltip for RGB values -->
+  <div id="tooltip"></div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>
