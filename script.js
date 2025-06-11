@@ -30,7 +30,7 @@ rgbDisplay.id = 'rgbValue';
 document.getElementById('controls').appendChild(rgbDisplay);
 
 // Generate the tree grid
-treePattern.forEach(row => {
+/*treePattern.forEach(row => {
   row.forEach(cell => {
     const div = document.createElement('div');
     div.className = 'cell';
@@ -38,6 +38,7 @@ treePattern.forEach(row => {
     tree.appendChild(div);
   });
 });
+*/
 
 // Update color preview box
 function updateColor() {
