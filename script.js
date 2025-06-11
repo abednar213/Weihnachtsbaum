@@ -30,14 +30,14 @@ rgbDisplay.id = 'rgbValue';
 document.getElementById('controls').appendChild(rgbDisplay);
 
 // Generate the tree grid
-//treePattern.forEach(row => {
-//  row.forEach(cell => {
-//    const div = document.createElement('div');
-//    div.className = 'cell';
-//    if (cell === 1) div.style.backgroundColor = '#eee';
-//    tree.appendChild(div);
-//  });
-// });
+treePattern.forEach(row => {
+  row.forEach(cell => {
+    const div = document.createElement('div');
+    div.className = 'cell';
+    if (cell === 1) div.style.backgroundColor = '#eee';
+    tree.appendChild(div);
+  });
+});
 
 // Update color preview box
 function updateColor() {
